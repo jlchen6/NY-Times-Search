@@ -6,7 +6,8 @@ function searchArticle(search){
         url: queryURL,
         method: "GET"
       }).then(function(response) {
-        console.log(response);
+          //Returns an array of articles in response.response.docs
+        console.log(response.response.docs);
       });
 
 }
